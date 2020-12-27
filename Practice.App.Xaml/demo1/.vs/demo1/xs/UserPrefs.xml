@@ -1,5 +1,5 @@
 ﻿<Properties HasIOSDesignerOverlayBeenDismissed="True" StartupConfiguration="{ABD915C6-2DD8-4E83-A893-91AA65684F81}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="demo1/SceneDelegate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="demo1/Main.storyboard">
     <Files>
       <File FileName="demo1/Main.cs" Line="1" Column="1" />
       <File FileName="demo1/AppDelegate.cs" Line="28" Column="51" />
@@ -18,7 +18,7 @@
             <Node name="demo1" expanded="True">
               <Node name="Resources" expanded="True" />
               <Node name="FirstViewController.cs" expanded="True" />
-              <Node name="SceneDelegate.cs" selected="True" />
+              <Node name="Main.storyboard" selected="True" />
               <Node name="SecondViewController.cs" expanded="True" />
             </Node>
           </Node>

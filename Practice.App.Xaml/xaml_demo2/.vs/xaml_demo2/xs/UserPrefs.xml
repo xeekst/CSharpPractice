@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{A08EF403-7CFF-42CF-AC13-D9EF637D730D}|Default" HasHotReloadOverlayBeenDismissed="True">
+  <MonoDevelop.Ide.ItemProperties.xaml__demo2.iOS TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.91925685-F8C0-4C81-907A-43C0E5147ECA" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="xaml_demo2/ViewModels/BaseViewModel.cs">
+    <Files>
+      <File FileName="xaml_demo2/Views/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="xaml_demo2/Views/ItemsPage.xaml" Line="1" Column="1" />
+      <File FileName="xaml_demo2/Views/ItemDetailPage.xaml" Line="1" Column="1" />
+      <File FileName="xaml_demo2/Views/NewItemPage.xaml" Line="1" Column="1" />
+      <File FileName="xaml_demo2/ViewModels/AboutViewModel.cs" Line="1" Column="1" />
+      <File FileName="xaml_demo2/ViewModels/BaseViewModel.cs" Line="1" Column="1" />
+      <File FileName="xaml_demo2/ViewModels/ItemsViewModel.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="xaml_demo2" expanded="True">
+            <Node name="xaml_demo2" expanded="True">
+              <Node name="ViewModels" expanded="True">
+                <Node name="BaseViewModel.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True" />
+            </Node>
+            <Node name="xaml_demo2.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

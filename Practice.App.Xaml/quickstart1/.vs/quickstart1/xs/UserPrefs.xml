@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{216DB376-8A7F-475A-9D0D-5ED7D27DA7FE}|Default" HasHotReloadOverlayBeenDismissed="True">
+  <MonoDevelop.Ide.ItemProperties.quickstart1.iOS TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.91925685-F8C0-4C81-907A-43C0E5147ECA" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="quickstart1/Models/Note.cs">
+    <Files>
+      <File FileName="quickstart1/MainPage.xaml" Line="24" Column="15" />
+      <File FileName="quickstart1/MainPage.xaml.cs" Line="26" Column="14" />
+      <File FileName="quickstart1/Models/Note.cs" Line="4" Column="5" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="quickstart1" expanded="True">
+            <Node name="quickstart1" expanded="True">
+              <Node name="Models" expanded="True">
+                <Node name="Note.cs" selected="True" />
+              </Node>
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
