@@ -1,0 +1,45 @@
+﻿<Properties StartupConfiguration="{DE9F476D-6380-4DE7-BFC9-4F391C4A397A}|Default" HasHotReloadOverlayBeenDismissed="True">
+  <MonoDevelop.Ide.ItemProperties.SneakersUIApp.Android PreferredExecutionTarget="Android.1115fba155480902" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SneakersUIApp/Views/SneakersPage.xaml">
+    <Files>
+      <File FileName="SneakersUIApp/Views/SneakerDetailPage.xaml" Line="32" Column="35" />
+      <File FileName="SneakersUIApp/Views/SneakersPage.xaml" Line="20" Column="57" />
+      <File FileName="SneakersUIApp/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="SneakersUIApp/App.xaml" Line="1" Column="1" />
+      <File FileName="SneakersUIApp/App.xaml.cs" Line="13" Column="46" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SneakersUIApp" expanded="True">
+            <Node name="SneakersUIApp" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+                <Node name="SdkDependencies" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="SneakerDetailPage.xaml" expanded="True" />
+                <Node name="SneakersPage.xaml" expanded="True" selected="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+            <Node name="SneakersUIApp.Android" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.SneakersUIApp.iOS automaticSigning="False" TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.034751B5-0EA5-4504-9E89-A83BBA769080" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

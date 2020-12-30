@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{D33D42FA-3170-4600-82F9-657E6B8BA9ED}|Default" HasHotReloadOverlayBeenDismissed="True">
+  <MonoDevelop.Ide.ItemProperties.BillDetailSample.iOS TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.91925685-F8C0-4C81-907A-43C0E5147ECA" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BillDetailSample/Views/BillDetailPage.xaml">
+    <Files>
+      <File FileName="BillDetailSample/Views/BillDetailPage.xaml" Line="49" Column="49" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BillDetailSample" expanded="True">
+            <Node name="BillDetailSample" expanded="True">
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="BillDetailPage.xaml" expanded="True" selected="True" />
+              </Node>
+            </Node>
+            <Node name="BillDetailSample.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.BillDetailSample.Android PreferredExecutionTarget="Android.1115fba155480902" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

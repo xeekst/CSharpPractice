@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{DDF59D85-5F2A-40E4-9552-9693AE39F15E}|Default" HasHotReloadOverlayBeenDismissed="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TNotes/Views/ItemsPage.xaml">
+    <Files>
+      <File FileName="TNotes/Views/ItemsPage.xaml" Line="8" Column="30" />
+      <File FileName="TNotes/Views/ItemDetailPage.xaml" Line="1" Column="1" />
+      <File FileName="TNotes/Views/AboutPage.xaml" Line="1" Column="1" />
+      <File FileName="TNotes/App.xaml" Line="1" Column="1" />
+      <File FileName="TNotes/Views/MainPage.xaml.cs" Line="10" Column="16" />
+      <File FileName="TNotes/App.xaml.cs" Line="17" Column="36" />
+      <File FileName="TNotes/Services/MockDataStore.cs" Line="9" Column="18" />
+      <File FileName="TNotes/Views/MainPage.xaml" Line="6" Column="1" />
+      <File FileName="TNotes/ViewModels/ItemDetailViewModel.cs" Line="1" Column="1" />
+      <File FileName="../Notes/Notes/NoteEntryPage.xaml" Line="13" Column="35" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TNotes" expanded="True">
+            <Node name="TNotes" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="ItemsPage.xaml" selected="True" />
+                <Node name="MainPage.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TNotes.iOS TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.91925685-F8C0-4C81-907A-43C0E5147ECA" />
+</Properties>

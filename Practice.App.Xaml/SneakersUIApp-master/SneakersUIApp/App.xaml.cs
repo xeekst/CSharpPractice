@@ -10,7 +10,7 @@ namespace SneakersUIApp
         {
             InitializeComponent();
 
-            MainPage = new Views.SneakerDetailPage();
+            MainPage = new Views.SneakersPage();
         }
 
         protected override void OnStart()
