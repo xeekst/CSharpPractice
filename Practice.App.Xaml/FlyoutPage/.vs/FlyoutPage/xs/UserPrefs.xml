@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{69FEDDB5-8248-49DA-BF37-52BFF4F5F844}|Default">
+  <MonoDevelop.Ide.ItemProperties.FlyoutPage.iOS TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F8547DD8-4738-4A12-8935-378D9C32A6F9" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FlyoutPage/Views/MainPage.xaml">
+    <Files>
+      <File FileName="FlyoutPage/App.xaml" Line="1" Column="1" />
+      <File FileName="FlyoutPage/Views/AboutPage.xaml" />
+      <File FileName="FlyoutPage/Views/MainPage.xaml" Line="24" Column="20" />
+      <File FileName="FlyoutPage/Views/MainPage.xaml.cs" />
+      <File FileName="FlyoutPage/Views/ItemsPage.xaml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FlyoutPage" expanded="True">
+            <Node name="FlyoutPage" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="MainPage.xaml" expanded="True" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{0911F8E3-4F9F-486B-9707-538D085DFB51}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="testlayout/App.xaml">
+    <Files>
+      <File FileName="testlayout/App.xaml" Line="9" Column="14" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="testlayout" expanded="True" selected="True">
+            <Node name="testlayout" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.testlayout FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.testlayout.iOS FirstBuild="True" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F8547DD8-4738-4A12-8935-378D9C32A6F9" />
+</Properties>

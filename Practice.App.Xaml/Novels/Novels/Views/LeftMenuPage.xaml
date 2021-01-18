@@ -1,5 +1,35 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Novels.Views.LeftMenuPage">
-    <ContentPage.Content>
-    </ContentPage.Content>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Novels.Views.LeftMenuPage"
+             xmlns:model="using:Novels.Models"
+             xmlns:view="using:Novels.Views"
+             Padding="0,40,0,0"
+             IconImageSource="hamburger.png"
+             Title="Menu">
+    <StackLayout>
+        <ListView x:Name="listView" x:FieldModifier="public">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type model:LeftMenuItem}">
+                    <model:LeftMenuItem Title="Novel" IconSource="novels.png" TargetType="{x:Type view:NovelListPage}" />
+                    <model:LeftMenuItem Title="Aoubt" IconSource="about.png" TargetType="{x:Type view:AboutPage}" />
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10,15">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding IconSource}" />
+                            <Label Grid.Column="1" Text="{Binding Title}" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+    </StackLayout>
 </ContentPage>

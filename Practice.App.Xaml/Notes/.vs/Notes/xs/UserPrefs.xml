@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{56B41C69-5C78-4D44-868D-E1831919EA6A}|Default" HasHotReloadOverlayBeenDismissed="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Notes/NotesPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Notes/NoteEntryPage.xaml">
     <Files>
       <File FileName="Notes/NoteEntryPage.xaml" Line="26" Column="33" />
-      <File FileName="Notes/NotesPage.xaml" Line="15" Column="9" />
-      <File FileName="Notes/App.xaml.cs" Line="1" Column="1" />
-      <File FileName="Notes/NotesPage.xaml.cs" Line="24" Column="20" />
-      <File FileName="Notes/NoteEntryPage.xaml.cs" />
+      <File FileName="Notes/NotesPage.xaml" />
+      <File FileName="Notes/App.xaml.cs" />
+      <File FileName="Notes/NotesPage.xaml.cs" />
+      <File FileName="Notes/NoteEntryPage.xaml.cs" Line="1" Column="1" />
       <File FileName="Notes/Models/Note.cs" />
       <File FileName="Notes/App.xaml" />
       <File FileName="Notes/Data/NoteDatabase.cs" />
@@ -18,8 +18,8 @@
               <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="App.xaml" expanded="True" />
-              <Node name="NoteEntryPage.xaml" expanded="True" />
-              <Node name="NotesPage.xaml" expanded="True" selected="True" />
+              <Node name="NoteEntryPage.xaml" expanded="True" selected="True" />
+              <Node name="NotesPage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
