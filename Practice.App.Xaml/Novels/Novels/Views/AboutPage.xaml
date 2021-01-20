@@ -1,6 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Novels.Views.AboutPage">
     <ContentPage.Content>
-        <Label Text="About Page"></Label>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.2*" />
+                <RowDefinition />
+                <RowDefinition Height="0.3*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <BoxView Color="#fff" Grid.Row="1"/>
+            <StackLayout Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center">
+                <Label Text="Novels"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+                <Label Text="Version 0.1.1"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+                <Label Text="Author: xeekst"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+                <Label Text="Email: xeekst@outlook.com"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+                <Label Text="描述：这是一个纯粹看书的App"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

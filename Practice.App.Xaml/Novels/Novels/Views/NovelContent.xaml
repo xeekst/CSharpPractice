@@ -4,6 +4,7 @@
              x:Class="Novels.Views.NovelContent"
              Title="NovelMenu">
     <ContentPage.Content>
-        <Label Text="3333"></Label>
+        <Label
+            Text="3333"></Label>
     </ContentPage.Content>
 </ContentPage>

@@ -12,7 +12,7 @@
             <ListView.ItemsSource>
                 <x:Array Type="{x:Type model:LeftMenuItem}">
                     <model:LeftMenuItem Title="Novel" IconSource="novels.png" TargetType="{x:Type view:NovelListPage}" />
-                    <model:LeftMenuItem Title="Aoubt" IconSource="about.png" TargetType="{x:Type view:AboutPage}" />
+                    <model:LeftMenuItem Title="About" IconSource="about.png" TargetType="{x:Type view:AboutPage}" />
                 </x:Array>
             </ListView.ItemsSource>
             <ListView.ItemTemplate>

@@ -1,17 +1,17 @@
 ﻿<Properties StartupConfiguration="{56AA9384-A506-40EC-A3E4-642B4D66EF95}|Default" HasHotReloadOverlayBeenDismissed="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Novels/MainPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Novels/Views/NovelContent.xaml">
     <Files>
       <File FileName="Novels/Views/LeftMenuPage.xaml" Line="20" Column="31" />
       <File FileName="Novels/Views/AboutPage.xaml" />
-      <File FileName="Novels/Views/LeftMenuPage.xaml.cs" Line="32" Column="10" />
+      <File FileName="Novels/Views/LeftMenuPage.xaml.cs" />
       <File FileName="Novels/Models/LeftMenuItem.cs" />
-      <File FileName="Novels/MainPage.xaml.cs" Line="17" Column="13" />
+      <File FileName="Novels/MainPage.xaml.cs" />
       <File FileName="Novels/obj/Debug/netstandard2.0/MainPage.xaml.g.cs" />
       <File FileName="Novels/obj/Debug/netstandard2.0/Views/LeftMenuPage.xaml.g.cs" />
-      <File FileName="Novels/Views/NovelContent.xaml" Line="1" Column="1" />
-      <File FileName="Novels/Views/NovelListPage.xaml" Line="4" Column="31" />
-      <File FileName="Novels/Views/NovelListPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="Novels/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="Novels/Views/NovelContent.xaml" Line="7" Column="15" />
+      <File FileName="Novels/Views/NovelListPage.xaml" />
+      <File FileName="Novels/Views/NovelListPage.xaml.cs" />
+      <File FileName="Novels/MainPage.xaml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,9 +19,8 @@
           <Node name="Novels" expanded="True">
             <Node name="Novels" expanded="True">
               <Node name="Views" expanded="True">
-                <Node name="NovelListPage.xaml" expanded="True" />
+                <Node name="NovelContent.xaml" selected="True" />
               </Node>
-              <Node name="MainPage.xaml" selected="True" />
             </Node>
             <Node name="Novels.iOS" expanded="True">
               <Node name="Properties" expanded="True" />
