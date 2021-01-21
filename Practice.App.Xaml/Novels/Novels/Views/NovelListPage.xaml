@@ -6,8 +6,37 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
+                <RowDefinition Height="100" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
+            <Label Text="Temukan Artikel Favorit Kamu Disini!"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center">
+            </Label>
+            <SearchBar Grid.Row="1"
+                       Placeholder="Search"
+                       CancelButtonColor="Orange"
+                       FontSize="Medium"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       FontAttributes="Italic"
+                       BackgroundColor="#fff">
+            </SearchBar>
+            <FlexLayout Grid.Row="2"
+                        Direction="Row"
+                        AlignItems="Center"
+                        AlignContent="Center"
+                        JustifyContent="Center"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center">
+                <Label Text="中："></Label>
+                <Switch VerticalOptions="Center" HorizontalOptions="Center"></Switch>
+                <Label Text="英：" Margin="0 0 0 30"></Label>
+                <Switch VerticalOptions="Center" HorizontalOptions="Center"></Switch>
+
+            </FlexLayout>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
