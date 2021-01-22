@@ -12,7 +12,9 @@
             </Grid.ColumnDefinitions>
 
             <BoxView Color="#fff" Grid.Row="1"/>
-            <StackLayout Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center">
+            <StackLayout Grid.Row="1"
+                         VerticalOptions="Center"
+                         HorizontalOptions="Center">
                 <Label Text="Novels"
                    HorizontalOptions="Center"
                    VerticalOptions="Center" />

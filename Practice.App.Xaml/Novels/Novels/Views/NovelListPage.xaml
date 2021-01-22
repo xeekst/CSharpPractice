@@ -9,6 +9,7 @@
                 <RowDefinition Height="100" />
                 <RowDefinition Height="60" />
                 <RowDefinition Height="50" />
+                <RowDefinition Height="40"/>
                 <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
             <Label Text="Temukan Artikel Favorit Kamu Disini!"
@@ -27,16 +28,40 @@
             <FlexLayout Grid.Row="2"
                         Direction="Row"
                         AlignItems="Center"
-                        AlignContent="Center"
-                        JustifyContent="Center"
-                        VerticalOptions="Center"
-                        HorizontalOptions="Center">
+                        JustifyContent="Center">
                 <Label Text="中："></Label>
                 <Switch VerticalOptions="Center" HorizontalOptions="Center"></Switch>
                 <Label Text="英：" Margin="30,0,0,0"></Label>
                 <Switch VerticalOptions="Center" HorizontalOptions="Center"></Switch>
 
             </FlexLayout>
+            <Label Grid.Row="3"
+                   Text="Artikel Terpopuler"
+                   Margin="30,0,0,0"
+                   FontFamily="Comic Sans MS"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   VerticalOptions="Center">
+            </Label>
+
+            <ListView Grid.Row="4"
+                      x:Name="listView"
+                      ItemSelected="OnItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal">
+                                <StackLayout Padding="5,0,0,0" VerticalOptions="StartAndExpand" Orientation="Vertical">
+                                    <Label Text="{Binding .}" VerticalTextAlignment="Center" FontSize="Medium" />
+                                    <Label Text="Label 2" VerticalTextAlignment="Center" FontSize="Small" />
+                                </StackLayout>
+                                <Button Text="X" BackgroundColor="Gray" HorizontalOptions="EndAndExpand" CommandParameter="{Binding .}" Clicked="OnCellClicked" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
         </Grid>
     </ContentPage.Content>
 </ContentPage>
