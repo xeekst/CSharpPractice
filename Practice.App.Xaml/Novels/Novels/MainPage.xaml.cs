@@ -19,7 +19,7 @@ namespace Novels
 
         void listView_ItemSelected(System.Object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
         {
-            var item = e.SelectedItem as LeftMenuItem;
+            var item = e.SelectedItem as LeftMenuItemViewModel;
             if (item != null)
             {
 

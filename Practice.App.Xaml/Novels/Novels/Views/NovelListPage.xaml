@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Novels.Views.NovelListPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Novels.Views.NovelListPage"
+             xmlns:model="using:Novels.Models">
     <ContentPage.Content>
         <Grid>
             <Grid.ColumnDefinitions>
@@ -12,7 +15,8 @@
                 <RowDefinition Height="40"/>
                 <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
-            <Label Text="Temukan Artikel Favorit Kamu Disini!"
+            <Label x:Name="PageTitle"
+                   Text="Temukan Artikel Favorit Kamu Disini!"
                    HorizontalOptions="Center"
                    VerticalOptions="Center">
             </Label>
@@ -46,17 +50,44 @@
 
             <ListView Grid.Row="4"
                       x:Name="listView"
-                      ItemSelected="OnItemSelected">
+                      ItemSelected="OnItemSelected"
+                      SeparatorVisibility="None"
+                      RowHeight="80"
+                      Scrolled="listView_Scrolled">
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type model:NovelListItemViewModel}">
+                        <model:NovelListItemViewModel Title="《文学体验三十讲》" Author="作者: 苗炜" IconSource="https://img2.doubanio.com/view/subject/l/public/s33769653.jpg" />
+                        <model:NovelListItemViewModel Title="《阿兰的初恋》"  Author="作者: [法] 埃曼努埃尔·吉贝尔" IconSource="https://img2.doubanio.com/view/subject/l/public/s33783223.jpg" />
+                        <model:NovelListItemViewModel Title="《文学体验三十讲》" Author="作者: 苗炜" IconSource="https://img2.doubanio.com/view/subject/l/public/s33769653.jpg" />
+                        <model:NovelListItemViewModel Title="《阿兰的初恋》"  Author="作者: [法] 埃曼努埃尔·吉贝尔" IconSource="https://img2.doubanio.com/view/subject/l/public/s33783223.jpg" />
+                        <model:NovelListItemViewModel Title="《文学体验三十讲》" Author="作者: 苗炜" IconSource="https://img2.doubanio.com/view/subject/l/public/s33769653.jpg" />
+                        <model:NovelListItemViewModel Title="《阿兰的初恋》"  Author="作者: [法] 埃曼努埃尔·吉贝尔" IconSource="https://img2.doubanio.com/view/subject/l/public/s33783223.jpg" />
+                    </x:Array>
+                </ListView.ItemsSource>
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal">
-                                <StackLayout Padding="5,0,0,0" VerticalOptions="StartAndExpand" Orientation="Vertical">
-                                    <Label Text="{Binding .}" VerticalTextAlignment="Center" FontSize="Medium" />
-                                    <Label Text="Label 2" VerticalTextAlignment="Center" FontSize="Small" />
+                            <Frame CornerRadius="5"
+                                   Padding="0"
+                                   BackgroundColor="#efefef"
+                                   HasShadow="False"
+                                   Margin="15,0,15,0"
+                                   HeightRequest="70"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Fill">
+                                <StackLayout Orientation="Horizontal">
+                                    <Image HeightRequest="50"
+                                           Margin="15,0,0,0"
+                                           Source="{Binding IconSource}">
+                                    </Image>
+                                    <StackLayout Padding="5,0,0,0"
+                                             VerticalOptions="Center"
+                                             Orientation="Vertical">
+                                        <Label Text="{Binding Title}" VerticalTextAlignment="Center" FontSize="Medium" />
+                                        <Label Padding="10,0,0,0" Text="{Binding Author}" VerticalTextAlignment="Center" FontSize="Small" />
+                                    </StackLayout>
                                 </StackLayout>
-                                <Button Text="X" BackgroundColor="Gray" HorizontalOptions="EndAndExpand" CommandParameter="{Binding .}" Clicked="OnCellClicked" />
-                            </StackLayout>
+                            </Frame>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

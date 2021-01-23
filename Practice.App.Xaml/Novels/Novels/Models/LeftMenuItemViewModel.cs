@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Novels.Models
 {
-    public class LeftMenuItem
+    public class LeftMenuItemViewModel
     {
         public string Title { get; set; }
 
