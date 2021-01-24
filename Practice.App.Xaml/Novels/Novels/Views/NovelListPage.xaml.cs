@@ -14,15 +14,29 @@ namespace Novels.Views
         {
             InitializeComponent();
             NovelItems = new ObservableCollection<NovelListItemViewModel>();
-            NovelItems.Add(new NovelListItemViewModel()
-            {
-                Author = "苗炜",
-                Title = "《文学体验三十讲》",
-                Language = "中",
-                IconSource = "https://img2.doubanio.com/view/subject/l/public/s33769653.jpg"
+            listView.ItemsSource = NovelItems;
+            InitData();
+        }
 
-            }) ;
-            //listView.ItemsSource = NovelItems;
+        private void InitData()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                NovelItems.Add(new NovelListItemViewModel()
+                {
+                    Author = "苗炜",
+                    Title = "《文学体验三十讲》",
+                    Language = "中",
+                    IconSource = "https://img2.doubanio.com/view/subject/l/public/s33769653.jpg"
+                });
+                NovelItems.Add(new NovelListItemViewModel()
+                {
+                    Title = "《阿兰的初恋》",
+                    Author = "作者: [法] 埃曼努埃尔·吉贝尔",
+                    IconSource = "https://img2.doubanio.com/view/subject/l/public/s33783223.jpg",
+                    Language = "法"
+                });
+            }
         }
 
         void OnItemSelected(System.Object sender, Xamarin.Forms.SelectedItemChangedEventArgs e)
@@ -36,8 +50,43 @@ namespace Novels.Views
         {
         }
 
-        void listView_Scrolled(System.Object sender, Xamarin.Forms.ScrolledEventArgs e)
+        /// <summary>
+        /// 滚动到了底部
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void ScrollView_Scrolled(System.Object sender, Xamarin.Forms.ScrolledEventArgs e)
         {
+            ScrollView scrollView = sender as ScrollView;
+            double scrollingSpace = scrollView.Content.Height - scrollView.Height;
+
+            if (scrollingSpace <= e.ScrollY)
+            {
+                //DisplayAlert("Info", e.ScrollY.ToString(), "OK");
+                AddData();
+            }
+             
+        }
+
+        void AddData()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                NovelItems.Add(new NovelListItemViewModel()
+                {
+                    Author = "苗炜",
+                    Title = "《文学体验三十讲》",
+                    Language = "中",
+                    IconSource = "https://img2.doubanio.com/view/subject/l/public/s33769653.jpg"
+                });
+                NovelItems.Add(new NovelListItemViewModel()
+                {
+                    Title = "《阿兰的初恋》",
+                    Author = "作者: [法] 埃曼努埃尔·吉贝尔",
+                    IconSource = "https://img2.doubanio.com/view/subject/l/public/s33783223.jpg",
+                    Language = "法"
+                });
+            }
         }
     }
 }

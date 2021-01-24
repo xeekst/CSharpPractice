@@ -11,5 +11,9 @@ namespace Novels.Views
         {
             InitializeComponent();
         }
+
+        void ScrollView_Scrolled(System.Object sender, Xamarin.Forms.ScrolledEventArgs e)
+        {
+        }
     }
 }
