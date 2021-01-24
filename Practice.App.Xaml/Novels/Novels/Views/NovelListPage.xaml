@@ -4,7 +4,8 @@
              x:Class="Novels.Views.NovelListPage"
              xmlns:model="using:Novels.Models">
     <ContentPage.Content>
-        <ScrollView HorizontalOptions="Fill" Scrolled="ScrollView_Scrolled">
+        <ScrollView HorizontalOptions="Fill"
+                    Scrolled="ScrollView_Scrolled">
             <FlexLayout x:Name="flex2"
                         Direction="Column"
                         JustifyContent="Start"

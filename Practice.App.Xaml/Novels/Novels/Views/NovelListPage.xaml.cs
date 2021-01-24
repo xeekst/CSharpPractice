@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Threading.Tasks;
 using Novels.Models;
 using Xamarin.Forms;
 
@@ -9,6 +10,7 @@ namespace Novels.Views
     public partial class NovelListPage : ContentPage
     {
         public ObservableCollection<NovelListItemViewModel> NovelItems { get; set; }
+        private bool _isLoadData = false;
 
         public NovelListPage()
         {
@@ -60,33 +62,38 @@ namespace Novels.Views
             ScrollView scrollView = sender as ScrollView;
             double scrollingSpace = scrollView.Content.Height - scrollView.Height;
 
-            if (scrollingSpace <= e.ScrollY)
+            if (scrollingSpace <= e.ScrollY && !_isLoadData)
             {
                 //DisplayAlert("Info", e.ScrollY.ToString(), "OK");
                 AddData();
             }
              
         }
-
         void AddData()
         {
-            for (int i = 0; i < 5; i++)
+            _isLoadData = true;
+            for (int i = 0; i < 1; i++)
             {
                 NovelItems.Add(new NovelListItemViewModel()
                 {
-                    Author = "苗炜",
+                    Author = "苗炜3",
                     Title = "《文学体验三十讲》",
                     Language = "中",
                     IconSource = "https://img2.doubanio.com/view/subject/l/public/s33769653.jpg"
                 });
                 NovelItems.Add(new NovelListItemViewModel()
                 {
-                    Title = "《阿兰的初恋》",
+                    Title = "《阿兰的初恋》3",
                     Author = "作者: [法] 埃曼努埃尔·吉贝尔",
                     IconSource = "https://img2.doubanio.com/view/subject/l/public/s33783223.jpg",
                     Language = "法"
                 });
             }
+            Task.Factory.StartNew(async () =>
+            {
+                await Task.Delay(3000);
+                _isLoadData = false;
+            });
         }
     }
 }
