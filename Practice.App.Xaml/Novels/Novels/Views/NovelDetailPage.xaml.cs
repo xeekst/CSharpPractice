@@ -5,9 +5,9 @@ using Xamarin.Forms;
 
 namespace Novels.Views
 {
-    public partial class NovelContent : ContentPage
+    public partial class NovelDetailPage : ContentPage
     {
-        public NovelContent()
+        public NovelDetailPage()
         {
             InitializeComponent();
         }
