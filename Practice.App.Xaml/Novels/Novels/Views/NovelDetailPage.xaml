@@ -1,5 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Novels.Views.NovelDetailPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Novels.Views.NovelDetailPage">
     <ContentPage.Content>
+        <AbsoluteLayout>
+            <StackLayout>
+                <Label Text="文章头"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                 AbsoluteLayout.LayoutBounds="0.5,0.9,100,25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional" >
+                <Label Text="ss"></Label>
+            </StackLayout>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

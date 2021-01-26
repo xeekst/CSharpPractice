@@ -54,7 +54,8 @@
                 </FlexLayout>
                 <ListView x:Name="listView"
                           SeparatorVisibility="None"
-                          RowHeight="80">
+                          RowHeight="80"
+                          ItemSelected="OnItemSelected">
                     <ListView.ItemsSource>
                         <x:Array Type="{x:Type model:NovelListItemViewModel}">
                             <model:NovelListItemViewModel Title="《文学体验三十讲》" Author="作者: 苗炜" IconSource="https://img2.doubanio.com/view/subject/l/public/s33769653.jpg" />
