@@ -68,6 +68,7 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Lobster-Regular.ttf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -138,5 +139,13 @@
     <BundleResource Include="Resources\hamburger%402x.png" />
     <BundleResource Include="Resources\about.png" />
     <BundleResource Include="Resources\novels.png" />
+    <BundleResource Include="Resources\moon.png" />
+    <BundleResource Include="Resources\mark.png" />
+    <BundleResource Include="Resources\expland.png" />
+    <BundleResource Include="Resources\shrink.png" />
+    <BundleResource Include="Resources\sun.png" />
+    <BundleResource Include="Resources\font.png" />
+    <BundleResource Include="Resources\Lobster-Regular.ttf" />
+    <BundleResource Include="Resources\history.png" />
   </ItemGroup>
 </Project>
