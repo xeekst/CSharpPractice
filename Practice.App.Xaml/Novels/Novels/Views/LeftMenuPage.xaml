@@ -12,19 +12,24 @@
             <ListView.ItemsSource>
                 <x:Array Type="{x:Type model:LeftMenuItemViewModel}">
                     <model:LeftMenuItemViewModel Title="Novel" IconSource="novels.png" TargetType="{x:Type view:NovelListPage}" />
+                    <model:LeftMenuItemViewModel Title="BookMark" IconSource="mark.png" TargetType="{x:Type view:BookMarkPage}" />
+                    <model:LeftMenuItemViewModel Title="History" IconSource="history.png" TargetType="{x:Type view:HistoryPage}" />
                     <model:LeftMenuItemViewModel Title="About" IconSource="about.png" TargetType="{x:Type view:AboutPage}" />
                 </x:Array>
             </ListView.ItemsSource>
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid Padding="10,15">
+                        <Grid Padding="10,12">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="30"/>
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
-                            <Image Source="{Binding IconSource}" />
-                            <Label Grid.Column="1" Text="{Binding Title}" />
+                            <Image HeightRequest="32"
+                                   Source="{Binding IconSource}" />
+                            <Label Grid.Column="1"
+                                   FontFamily="OpenSans-Light"
+                                   Text="{Binding Title}" />
                         </Grid>
                     </ViewCell>
                 </DataTemplate>

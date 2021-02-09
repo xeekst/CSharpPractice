@@ -14,7 +14,9 @@
                         HorizontalOptions="Fill">
                 <FlexLayout HeightRequest="100">
                     <Label x:Name="PageTitle"
-                           Text="Temukan Artikel Favorit Kamu Disini!"
+                           FontFamily="Lobster-Regular"
+                           FontSize="Title"
+                           Text="{Binding Slogan}"
                            Margin="15,0,0,0"
                            VerticalTextAlignment="Center"
                            HeightRequest="100">
@@ -29,7 +31,7 @@
                            FontAttributes="Italic"
                            BackgroundColor="#fff">
                 </SearchBar>
-                <FlexLayout Direction="Row"
+                <!--<FlexLayout Direction="Row"
                             AlignItems="Center"
                             AlignContent="Center"
                             JustifyContent="Center"
@@ -38,15 +40,15 @@
                     <Switch VerticalOptions="Center" HorizontalOptions="Center"></Switch>
                     <Label Text="英：" Margin="30,0,0,0"></Label>
                     <Switch VerticalOptions="Center" HorizontalOptions="Center"></Switch>
-                </FlexLayout>
-                <FlexLayout HeightRequest="50">
+                </FlexLayout>-->
+                <FlexLayout HeightRequest="50"
+                            Margin="0,20,0,0">
                     <Label x:Name="label2"
-                           Text="Artikel Terpopuler"
+                           FontFamily="Lobster-Regular"
+                           Text="{Binding Title}"
                            Margin="15,0,0,0"
-                           FontFamily="Comic Sans MS"
                            FontSize="Large"
                            HeightRequest="50"
-                           FontAttributes="Bold"
                            HorizontalOptions="Fill"
                            HorizontalTextAlignment="Start"
                            LineBreakMode="WordWrap">
@@ -58,12 +60,6 @@
                           ItemSelected="OnItemSelected">
                     <ListView.ItemsSource>
                         <x:Array Type="{x:Type model:NovelListItemViewModel}">
-                            <model:NovelListItemViewModel Title="《文学体验三十讲》" Author="作者: 苗炜" IconSource="https://img2.doubanio.com/view/subject/l/public/s33769653.jpg" />
-                            <model:NovelListItemViewModel Title="《阿兰的初恋》"  Author="作者: [法] 埃曼努埃尔·吉贝尔" IconSource="https://img2.doubanio.com/view/subject/l/public/s33783223.jpg" />
-                            <model:NovelListItemViewModel Title="《文学体验三十讲》" Author="作者: 苗炜" IconSource="https://img2.doubanio.com/view/subject/l/public/s33769653.jpg" />
-                            <model:NovelListItemViewModel Title="《阿兰的初恋》"  Author="作者: [法] 埃曼努埃尔·吉贝尔" IconSource="https://img2.doubanio.com/view/subject/l/public/s33783223.jpg" />
-                            <model:NovelListItemViewModel Title="《文学体验三十讲》" Author="作者: 苗炜" IconSource="https://img2.doubanio.com/view/subject/l/public/s33769653.jpg" />
-                            <model:NovelListItemViewModel Title="《阿兰的初恋》"  Author="作者: [法] 埃曼努埃尔·吉贝尔" IconSource="https://img2.doubanio.com/view/subject/l/public/s33783223.jpg" />
                         </x:Array>
                     </ListView.ItemsSource>
                     <ListView.ItemTemplate>

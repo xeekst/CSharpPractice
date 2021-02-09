@@ -16,18 +16,23 @@
                          VerticalOptions="Center"
                          HorizontalOptions="Center">
                 <Label Text="Novels"
+                       FontFamily="OpenSans-Light"
                    HorizontalOptions="Center"
                    VerticalOptions="Center" />
                 <Label Text="Version 0.1.1"
+                       FontFamily="OpenSans-Light"
                    HorizontalOptions="Center"
                    VerticalOptions="Center" />
                 <Label Text="Author: xeekst"
+                       FontFamily="OpenSans-Light"
                    HorizontalOptions="Center"
                    VerticalOptions="Center" />
                 <Label Text="Email: xeekst@outlook.com"
+                       FontFamily="OpenSans-Light"
                    HorizontalOptions="Center"
                    VerticalOptions="Center" />
                 <Label Text="描述：这是一个纯粹看书的App"
+                       FontFamily="OpenSans-Light"
                    HorizontalOptions="Center"
                    VerticalOptions="Center" />
             </StackLayout>

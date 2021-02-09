@@ -22,6 +22,12 @@ namespace Novels.Views
 
         private void InitData()
         {
+            NovelMainModel model = new NovelMainModel()
+            {
+                Title = "Artikel Terpopuler",
+                Slogan = "Temukan Artikel Favorit Kamu Disini!"
+            };
+            this.BindingContext = model;
             for (int i = 0; i < 5; i++)
             {
                 NovelItems.Add(new NovelListItemViewModel()
@@ -45,7 +51,7 @@ namespace Novels.Views
         {
             if (e.SelectedItem == null) return; // has been set to null, do not 'process' tapped event
             //DisplayAlert("Tapped", e.SelectedItem + " row was tapped", "OK");
-            Navigation.PushAsync(new NovelDetailPage());
+            Navigation.PushAsync(new NovelDetailPage(new NovelDetailViewModel()));
             //((ListView)sender).SelectedItem = null; // de-select the row
         }
 

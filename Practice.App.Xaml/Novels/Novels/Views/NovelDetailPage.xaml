@@ -1,17 +1,91 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Novels.Views.NovelDetailPage">
+             x:Class="Novels.Views.NovelDetailPage"
+             xmlns:model="clr-namespace:Novels.Models">
     <ContentPage.Content>
-        <AbsoluteLayout>
-            <StackLayout>
-                <Label Text="文章头"></Label>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal"
-                 AbsoluteLayout.LayoutBounds="0.5,0.9,100,25"
-                 AbsoluteLayout.LayoutFlags="PositionProportional" >
-                <Label Text="ss"></Label>
-            </StackLayout>
+        <AbsoluteLayout x:Name="absLayout">
+            <ScrollView HorizontalOptions="Fill"
+                        AbsoluteLayout.LayoutBounds="0,0,1,1"
+                        AbsoluteLayout.LayoutFlags="All">
+                <FlexLayout Direction="Column"
+                                JustifyContent="Start"
+                                AlignContent="Center"
+                                AlignItems="Center"
+                                HorizontalOptions="Fill">
+                    <Label x:Name="novelTitle"
+                           FontSize="Title"
+                           Margin="0,20,0,20"
+                           FontFamily="Lobster-Regular"
+                           HorizontalTextAlignment="Center"
+                           Text="{Binding Title}">
+                    </Label>
+                    <Label x:Name="novelSubTitle"
+                           FontFamily="OpenSans-Light"
+                           FontSize="Small"
+                           VerticalTextAlignment="End"
+                           HorizontalTextAlignment="End"
+                           Padding="10,0,10,30"
+                           Text="{Binding SubTitle}" >
+                    </Label>
+                    <Label x:Name="novelContent"
+                           FontFamily="OpenSans-Light"
+                           Padding="10,0,10,0"
+                           Text="{Binding Content}" >
+                    </Label>
+                    <StackLayout Orientation="Horizontal"
+                                 Margin="20">
+                        <Button x:Name="prevBtn"
+                                Text="Prev"
+                                Margin="0,0,20,0"
+                                Clicked="prevBtn_Clicked">
+                        </Button>
+                        <Button x:Name="nextBtn"
+                                Text="Next"
+                                Margin="20,0,0,0"
+                                Clicked="nextBtn_Clicked">
+                        </Button>
+                    </StackLayout>
+                </FlexLayout>
+            </ScrollView>
+            <Frame  x:Name="shrink"
+                    CornerRadius="25"
+                    Padding="0"
+                    BackgroundColor="#f5f5f5"
+                    Margin="15,0,15,0"
+                    HeightRequest="320"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Fill"
+                    HasShadow="True"
+                    BorderColor="#fff"
+                    Opacity="0.9"
+                    AbsoluteLayout.LayoutBounds="0.5,0.9,280,50"
+                    AbsoluteLayout.LayoutFlags="PositionProportional">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <ImageButton x:Name="shrinkBtn" Clicked="shrinkBtn_Clicked" HeightRequest="32" Source="shrink.png" Margin="0,0,0,0"></ImageButton>
+                    <ImageButton HeightRequest="32" Source="mark.png" Margin="26,0,0,0"></ImageButton>
+                    <ImageButton HeightRequest="32" Source="sun.png" Margin="30,0,0,0"></ImageButton>
+                    <ImageButton HeightRequest="32" Source="font.png" Margin="30,0,0,0"></ImageButton>
+                </StackLayout>
+            </Frame>
+            <Frame  x:Name="expland"
+                    CornerRadius="25"
+                    Padding="0"
+                    BackgroundColor="#f5f5f5"
+                    Margin="15,0,15,0"
+                    HeightRequest="320"
+                    VerticalOptions="End"
+                    HorizontalOptions="End"
+                    HasShadow="True"
+                    BorderColor="#fff"
+                    Opacity="0.7"
+                    AbsoluteLayout.LayoutBounds="0.5,0.9,280,50"
+                    IsVisible="false" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <ImageButton Clicked="explandBtn_Clicked" Opacity="0.7" HeightRequest="32" Source="shrink.png" Margin="13,0,13,0"></ImageButton>
+                </StackLayout>
+            </Frame>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
